@@ -93,7 +93,7 @@ nav .container {
 
 /* 🎯 HERO SECTION */
 .hero {
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     padding-top: 80px;
@@ -611,5 +611,146 @@ footer {
   .social-links img:hover {
     transform: translateY(-4px);
     opacity: 0.8;
+  }
+  
+  /* 🧍 ABOUT SECTION NEW STYLE */
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    align-items: start;
+    gap: 4rem;
+  }
+  
+  .about-title {
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 800;
+    color: #fff;
+    opacity: 0.9;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px #764ba2;
+  }
+  
+  .about-text p {
+    color: #ffffff;
+    margin-bottom: 1.3rem;
+    line-height: 1.75;
+    font-size: 1.2rem;
+  }
+  
+  .about-text strong {
+    color: #667eea;
+  }
+  
+  .about-skills span {
+    color: #667eea;
+    font-weight: 600;
+  }
+  
+  .about-link {
+    display: inline-block;
+    margin-top: 1.2rem;
+    color: #667eea;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  
+  .about-link:hover {
+    border-color: #667eea;
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 900px) {
+    .about-layout {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 3rem;
+    }
+    .about-title {
+      justify-self: center;
+      text-shadow: 3px 3px #764ba2;
+    }
+    .about-text p { text-align: center; }
+  }
+  
+  /* 📌 Services Section */
+.services-layout {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    align-items: start;
+    gap: 4rem;
+  }
+  
+  .services-title {
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 800;
+    color: #fff;
+    opacity: 0.9;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px #764ba2; /* Purple accent */
+    text-align: right;
+  }
+  
+  .services-text {
+    font-size: 1.05rem;
+    color: #aaa;
+    line-height: 1.75;
+  }
+  
+  .services-intro strong {
+    color: #667eea;
+  }
+  
+  .services-sub {
+    margin-top: 1rem;
+    color: #aaa;
+  }
+  
+  .services-list-title {
+    margin-top: 2rem;
+    font-weight: 600;
+    color: #667eea;
+  }
+  
+  .services-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    color: #e0e0e0;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .services-list li {
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .services-list li:hover {
+    color: #667eea;
+    transform: translateX(4px);
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 900px) {
+    .services-layout {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 3rem;
+    }
+  
+    /* Put the big title first on mobile */
+    .services-title {
+      order: -1;
+      text-align: center;
+      text-shadow: 3px 3px #764ba2;
+    }
+  
+    .services-list li:hover {
+      transform: translateX(0);
+    }
   }
   
