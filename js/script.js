@@ -216,3 +216,13 @@ const form = document.querySelector(".contact-form");
       alert("Oops! Something went wrong 😢");
     }
   });
+
+
+//   --------------Messages-----------------
+function selectService(service) {
+    // Fill message input
+    document.querySelector("textarea[name='message']").value = "Service Request: " + service;
+    
+    // Smooth Scroll To Contact Section
+    document.querySelector("#contact").scrollIntoView({ behavior: "smooth" });
+  }
