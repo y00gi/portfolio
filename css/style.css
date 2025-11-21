@@ -343,12 +343,14 @@ section {
 /* 📌 SERVICES SECTION */
 .services-layout {
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 0.85fr 1.15fr; /* better balance */
     align-items: start;
-    gap: 4rem;
+    gap: 6rem; /* extra breathing space */
 }
 
 .services-title {
+    margin-top: 0.4rem; /* slight down offset */
+    text-align: left;   /* keep natural reading direction */
     font-size: clamp(3rem, 7vw, 5rem);
     font-weight: 800;
     color: #fff;
@@ -356,7 +358,6 @@ section {
     line-height: 1;
     letter-spacing: 2px;
     text-shadow: 4px 4px #764ba2;
-    text-align: right;
 }
 
 .services-text {
@@ -734,9 +735,8 @@ footer {
 
     .about-title,
     .services-title {
-        justify-self: center;
+        order: -1;
         text-align: center;
-        text-shadow: 3px 3px #764ba2;
     }
 
     .services-title {
