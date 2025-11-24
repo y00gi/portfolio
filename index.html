@@ -15,9 +15,8 @@
         <div class="container">
             <div class="logo"><a href="/">YR</a></div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,12 +30,15 @@
         <div class="hero-row">
     
           <div class="hero-content fade-in">
-            <div class="hero-label">👋 Hi, I'm Yogendra Rajput</div>
-            <h1>I turn computer gibberish into business <span class="gradient-text">$$$</span></h1>
+            <div class="hero-label">👋 Hey, I’m Yogendra Rajput</div>
+            <h1>Full-Stack Web-App Developer Crafting SaaS Platforms, APIs, and Scalable Business Tools</h1>
+            <p style="margin:1rem;color:#aaa;font-size:1.1rem;">
+                2+ years building secure, reliable software for enterprises, workflows, and internal automation.
+            </p>
             <div class="hero-buttons">
-              <a href="#contact" class="btn-primary">Get In Touch</a>
+                <a href="#contact" class="btn-primary">Get In Touch</a>
             </div>
-          </div>
+        </div>        
     
           <div class="hero-profile">
             <img src="img/profile.jpg" alt="Yogendra Rajput" class="profile-photo">
@@ -49,35 +51,57 @@
       </div>
     </section>        
 
-   <!-- About Section -->
-   <section id="about">
-    <div class="container about-layout">
-  
-      <h1 class="about-title">ABOUT&nbsp;ME</h1>
-  
-      <div class="about-text">
-        <p>
-          I’m a software developer who focuses on building practical tools that help teams work faster and smarter. 
-          Whether it’s tracking devices, managing workflows, or securing internal data, I love turning real problems 
-          into clean, reliable software.
-        </p>
-  
-        <p>
-          I’ve worked on CRM modules, inventory systems, and enterprise applications across the web 
-          and desktop. As a freelance developer, I also create end-to-end digital solutions for businesses looking to 
-          automate or scale their processes.
-        </p>
-  
-        <p>
-          Outside professional work, I’m exploring SAP ABAP and enterprise-level systems, aiming to design software 
-          that grows with organizations, not against them.
-        </p>
-  
-        <a href="#projects" class="about-link">View Projects →</a>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Services</div>
+          <h2 class="section-title">What I Build</h2>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Web Apps -->
+          <div class="service-card" onclick="selectService('Web Applications')">
+            <img src="img/web-dev.png" class="service-icon" />
+            <h3>Web Applications</h3>
+            <ul>
+              <li>Custom Business Applications</li>
+              <li>Workflow Automation Tools</li>
+              <li>Landing Pages & Company Sites</li>
+              <li>CMS & Admin Systems</li>
+            </ul>
+          </div>
+        
+          <!-- SaaS / APIs -->
+          <div class="service-card" onclick="selectService('SaaS & APIs')">
+            <img src="img/saas.png" class="service-icon" />
+            <h3>SaaS & APIs</h3>
+            <ul>
+              <li>REST API Development</li>
+              <li>SaaS Platform Development</li>
+              <li>Authentication & Security</li>
+              <li>Third-party Integrations</li>
+            </ul>
+          </div>
+        
+          <!-- Internal Tools -->
+          <div class="service-card" onclick="selectService('Internal Business Tools')">
+            <img src="img/tools.png" class="service-icon" />
+            <h3>Internal Business Tools</h3>
+            <ul>
+              <li>CRM & Client Tracking</li>
+              <li>Inventory & Ticketing Systems</li>
+              <li>Data Management & Dashboards</li>
+              <li>Workflow Optimization</li>
+            </ul>
+          </div>
+        
+        </div>
+        
       </div>
-  
-    </div>
-  </section>  
+    </section>
 
     <!-- Projects Section -->
     <section id="projects">
@@ -238,32 +262,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
-      <div class="container services-layout">
-        <h1 class="services-title">SERVICES</h1>
-
-        <div class="services-text">
-          <p class="services-intro">
-            I help businesses build reliable, scalable software that automates work and improves internal efficiency.
-            I collaborate directly with teams to create systems that are built around their real processes,
-            not just the technology behind them.
-          </p>
-          <p class="services-list-title">Some of the services I offer include:</p>
-
-          <ul class="services-list">
-            <li onclick="selectService('Full-Stack Application Development')">Full-Stack Application Development →</li>
-            <li onclick="selectService('Custom CRM & Business Tools')">Custom CRM & Business Tools →</li>
-            <li onclick="selectService('Inventory & Ticketing Systems')">Inventory & Ticketing Systems →</li>
-            <li onclick="selectService('Secure Authentication & Authorization')">Secure Authentication & Authorization →</li>
-            <li onclick="selectService('API Development & Integrations')">API Development & Integrations →</li>
-            <li onclick="selectService('Database Design & Optimization')">Database Design & Optimization →</li>
-            <li onclick="selectService('Technical Consultation')">Technical Consultation →</li>
-          </ul>          
-        </div>
-      </div>
-    </section>
-
     <!-- Skills Section -->
     <section id="skills">
       <div class="container">
@@ -336,9 +334,9 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Yogendra Rajput. Built with passion and code.</p>
+                <p>&copy; 2025 yogendra.cloud Built with passion and code.</p>
                 <div class="footer-links">
-                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
                     <a href="#projects">Projects</a>
                     <a href="#contact">Contact</a>
                 </div>
