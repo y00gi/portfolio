@@ -3,347 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yogendra Rajput - Software Developer</title>
+    <title>Yogendra Rajput - Creative Developer</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@studio-freight/lenis"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <canvas id="starfield"></canvas>
+    
+    <canvas id="starfield"></canvas>
+    <div class="noise-overlay"></div>
 
-    <!-- Navigation -->
     <nav>
-        <div class="container">
-            <div class="logo"><a href="/">YR</a></div>
+        <div class="container nav-container">
+            <div class="logo"><a href="/">YR<span class="dot">.</span></a></div>
             <ul class="nav-links">
-              <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#services" class="hover-link">Services</a></li>
+                <li><a href="#projects" class="hover-link">Projects</a></li>
+                <li><a href="#skills" class="hover-link">Skills</a></li>
+                <li><a href="#contact" class="btn-nav">Let's Talk</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
-      <div class="container">
-    
-        <div class="hero-row">
-    
-          <div class="hero-content fade-in">
-            <div class="hero-label">👋 Hey, I’m Yogendra Rajput</div>
-            <h1>Full-Stack Web-App Developer Crafting SaaS Platforms, APIs, and Scalable Business Tools</h1>
-            <p style="margin:1rem;color:#aaa;font-size:1.1rem;">
-                2+ years building secure, reliable software for enterprises, workflows, and internal automation.
-            </p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">Get In Touch</a>
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <div class="hero-badge">🚀 Open to Work</div>
+                <h1>Building Digital <span class="gradient-text">Experiences</span> <br> That Matter.</h1>
+                <p class="hero-subtitle">
+                    I am <strong class="text-white">Yogendra Rajput</strong>. A Full-Stack Developer specializing in 
+                    <span id="typewriter"></span>
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary glow-effect">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
             </div>
-        </div>        
-    
-          <div class="hero-profile">
-            <img src="img/profile.jpg" alt="Yogendra Rajput" class="profile-photo">
-            <div class="badge"><span class="dot"></span> Available for work!</div>
-            <div class="location-text">Currently based in India — open to relocate</div>
-          </div>
-    
+            
+            <div class="hero-visual reveal delay-200">
+                <div class="profile-wrapper" data-tilt>
+                    <div class="profile-glow"></div>
+                    <img src="img/profile.jpg" alt="Yogendra Rajput" class="profile-photo">
+                    <div class="floating-card c1">
+                        <span>⚡</span> Fast Performance
+                    </div>
+                    <div class="floating-card c2">
+                        <span>🛡️</span> Secure Systems
+                    </div>
+                </div>
+            </div>
         </div>
-    
-      </div>
-    </section>        
-
-
-    <!-- Services Section -->
-    <section id="services">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-label">Services</div>
-          <h2 class="section-title">What I Build</h2>
-        </div>
-
-        <div class="services-grid">
-
-          <!-- Web Apps -->
-          <div class="service-card" onclick="selectService('Web Applications')">
-            <img src="img/web-dev.png" class="service-icon" />
-            <h3>Web Applications</h3>
-            <ul>
-              <li>Custom Business Applications</li>
-              <li>Workflow Automation Tools</li>
-              <li>Landing Pages & Company Sites</li>
-              <li>CMS & Admin Systems</li>
-            </ul>
-          </div>
-        
-          <!-- SaaS / APIs -->
-          <div class="service-card" onclick="selectService('SaaS & APIs')">
-            <img src="img/saas.png" class="service-icon" />
-            <h3>SaaS & APIs</h3>
-            <ul>
-              <li>REST API Development</li>
-              <li>SaaS Platform Development</li>
-              <li>Authentication & Security</li>
-              <li>Third-party Integrations</li>
-            </ul>
-          </div>
-        
-          <!-- Internal Tools -->
-          <div class="service-card" onclick="selectService('Internal Business Tools')">
-            <img src="img/tools.png" class="service-icon" />
-            <h3>Internal Business Tools</h3>
-            <ul>
-              <li>CRM & Client Tracking</li>
-              <li>Inventory & Ticketing Systems</li>
-              <li>Data Management & Dashboards</li>
-              <li>Workflow Optimization</li>
-            </ul>
-          </div>
-        
-        </div>
-        
-      </div>
     </section>
 
-    <!-- Projects Section -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">My Expertise</h2>
+                <p class="section-desc">Solving complex problems with elegant code.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="glass-card spotlight" data-tilt onclick="selectService('Web Applications')">
+                    <div class="card-content">
+                        <div class="icon-box">💻</div>
+                        <h3>Web Applications</h3>
+                        <p>Custom business logic, automated workflows, and high-performance dashboards built with Django & .NET.</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card spotlight" data-tilt onclick="selectService('SaaS & APIs')">
+                    <div class="card-content">
+                        <div class="icon-box">☁️</div>
+                        <h3>SaaS & APIs</h3>
+                        <p>Scalable REST APIs, secure authentication flows, and third-party integrations for modern platforms.</p>
+                    </div>
+                </div>
+                
+                <div class="glass-card spotlight" data-tilt onclick="selectService('Internal Business Tools')">
+                    <div class="card-content">
+                        <div class="icon-box">🔧</div>
+                        <h3>Internal Tools</h3>
+                        <p>CRM systems, inventory tracking, and ticketing solutions that optimize your internal operations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="projects">
         <div class="container">
-            <div class="section-header">
-                <div class="section-label">Projects</div>
-                <h2 class="section-title">Featured Work</h2>
-                <p class="section-description">
-                    A collection of projects that showcase my skills and problem-solving abilities.
-                </p>
+            <div class="section-header reveal">
+                <h2 class="section-title">Selected Works</h2>
             </div>
 
             <div class="projects-grid">
-
-                <!-- Inventory + Ticketing System -->
-                <div class="project-card">
-                  <div class="project-header slider">
-                      <div class="slides">
-                          <img src="img/inventory1.png">
-                          <img src="img/inventory2.png">
-                          <img src="img/inventory3.png">
-                      </div>
-                      <button class="slide-btn prev">❮</button>
-                      <button class="slide-btn next">❯</button>
-                      <div class="dots"></div>
-                  </div>
-
-                  <div class="project-body">
-                      <div class="project-title">Inventory + Ticketing System</div>
-                      <p class="project-description">
-                          Internal tool for tracking hardware devices and managing IT support tickets.
-                          Streamlined asset management and improved response time for technical issues.
-                      </p>
-                      <div class="project-tags">
-                          <span class="tag">Django</span>
-                          <span class="tag">Database Design</span>
-                          <span class="tag">Python</span>
-                      </div>
-                  </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="img/inventory1.png" alt="Inventory System">
+                        <div class="overlay">
+                            <a href="#" class="btn-view">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Inventory + Ticketing</h3>
+                        <p>Internal tool for tracking hardware assets and IT support.</p>
+                        <div class="tech-stack">
+                            <span>Django</span><span>Python</span><span>PostgreSQL</span>
+                        </div>
+                    </div>
                 </div>
 
-
-                <!-- Watermark Builder -->
-                <div class="project-card">
-                  <div class="project-header slider">
-                      <div class="slides">
-                          <img src="img/watermark1.png">
-                          <img src="img/watermark2.png">
-                      </div>
-                      <button class="slide-btn prev">❮</button>
-                      <button class="slide-btn next">❯</button>
-                      <div class="dots"></div>
-                  </div>
-
-                  <div class="project-body">
-                      <div class="project-title">Watermark Builder</div>
-                      <p class="project-description">
-                          Desktop application that creates on-screen security watermarks to prevent sensitive information leaks.
-                      </p>
-                      <div class="project-tags">
-                          <span class="tag">WPF</span>
-                          <span class="tag">.NET 8</span>
-                          <span class="tag">C#</span>
-                          <span class="tag">Security</span>
-                      </div>
-                  </div>
+                <div class="project-card reveal delay-100">
+                    <div class="project-image">
+                        <img src="img/watermark1.png" alt="Watermark Builder">
+                        <div class="overlay">
+                            <a href="#" class="btn-view">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Watermark Security Tool</h3>
+                        <p>Desktop app to prevent data leaks via screen capture.</p>
+                        <div class="tech-stack">
+                            <span>WPF</span><span>C#</span><span>.NET 8</span>
+                        </div>
+                    </div>
                 </div>
 
-
-                <!-- Fintrix Consulting Website -->
-                <div class="project-card">
-                  <div class="project-header slider">
-                      <div class="slides">
-                          <img src="img/fintrix1.png">
-                      </div>
-                      <button class="slide-btn prev">❮</button>
-                      <button class="slide-btn next">❯</button>
-                      <div class="dots"></div>
-                  </div>
-
-                  <div class="project-body">
-                      <div class="project-title">Fintrix Consulting Website</div>
-                      <p class="project-description">
-                          Modern professional consulting website with SEO optimization and fully responsive layouts.
-                      </p>
-                      <div class="project-tags">
-                          <span class="tag">Web Development</span>
-                          <span class="tag">Freelance</span>
-                          <span class="tag">Responsive Design</span>
-                      </div>
-                  </div>
+                <div class="project-card reveal delay-200">
+                    <div class="project-image">
+                        <img src="img/bidupdate1.png" alt="Tender Portal">
+                        <div class="overlay">
+                            <a href="#" class="btn-view">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>BidUpdate Portal</h3>
+                        <p>Comprehensive tender management system.</p>
+                        <div class="tech-stack">
+                            <span>Full Stack</span><span>Portal</span>
+                        </div>
+                    </div>
                 </div>
 
-
-                <!-- BidUpdate Tender Portal -->
-                <div class="project-card">
-                  <div class="project-header slider">
-                      <div class="slides">
-                          <img src="img/bidupdate1.png">
-                          <img src="img/bidupdate2.png">
-                      </div>
-                      <button class="slide-btn prev">❮</button>
-                      <button class="slide-btn next">❯</button>
-                      <div class="dots"></div>
-                  </div>
-
-                  <div class="project-body">
-                      <div class="project-title">BidUpdate Tender Portal</div>
-                      <p class="project-description">
-                          Tender management portal with document management, notifications, and secure login.
-                      </p>
-                      <div class="project-tags">
-                          <span class="tag">Full Stack</span>
-                          <span class="tag">Freelance</span>
-                          <span class="tag">Portal Development</span>
-                      </div>
-                  </div>
+                <div class="project-card reveal delay-200">
+                    <div class="project-image">
+                        <img src="img/fintrix1.png" alt="Fintrix Consulting Website">
+                        <div class="overlay">
+                            <a href="#" class="btn-view">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fintrix Consulting</h3>
+                        <p>Modern professional consulting website featuring SEO optimization, fully responsive layouts, and fast loading speeds.</p>
+                        <div class="tech-stack">
+                            <span>Web Dev</span><span>SEO</span><span>Responsive</span>
+                        </div>
+                    </div>
                 </div>
-
-
-                <!-- CRM Modules & REST APIs -->
-                <div class="project-card">
-                  <div class="project-header">
-                      <div class="project-icon">🔐</div>
-                      <div class="project-title">Kiosk Visitor Management System</div>
-                  </div>
-                  <p class="project-description">
-                      Comprehensive visitor tracking system that captures photos and visitor details 
-                      to track potential homebuyers across multiple sites. Improved lead tracking 
-                      and customer engagement for the sales team.
-                  </p>
-                  <div class="project-tags">
-                      <span class="tag">Django</span>
-                      <span class="tag">Python</span>
-                      <span class="tag">Computer Vision</span>
-                      <span class="tag">SQL</span>
-                  </div>
-              </div>
-              
-              <div class="project-card">
-                  <div class="project-header">
-                      <div class="project-icon">🏢</div>
-                      <div class="project-title">CRM Modules & REST APIs</div>
-                  </div>
-                  <p class="project-description">
-                      Built comprehensive REST APIs for managing projects, units, customer workflows, 
-                      and sales tracking. Implemented authentication, authorization, and optimized 
-                      database queries for high performance.
-                  </p>
-                  <div class="project-tags">
-                      <span class="tag">ASP.NET Core</span>
-                      <span class="tag">SQL Server</span>
-                      <span class="tag">Entity Framework</span>
-                      <span class="tag">REST APIs</span>
-                  </div>
-              </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-      <div class="container">
-          <div class="section-header">
-              <div class="section-label">Skills</div>
-              <h2 class="section-title">Technical Expertise</h2>
-          </div>
-
-          <div class="skills-icons">
-            <div class="skill-icon"><img src="img/csharp.png"><span>C#</span></div>
-            <div class="skill-icon"><img src="img/python.png"><span>Python</span></div>
-            <div class="skill-icon"><img src="img/cpp.png"><span>C++</span></div>
-            <div class="skill-icon"><img src="img/sql.png"><span>SQL</span></div>
-          
-            <div class="skill-icon"><img src="img/dotnet.png"><span>ASP.NET Core</span></div>
-            <div class="skill-icon"><img src="img/django.png"><span>Django</span></div>
-          
-            <div class="skill-icon"><img src="img/sqlserver.png"><span>SQL Server</span></div>
-            <div class="skill-icon"><img src="img/git.png"><span>Git</span></div>
-            <div class="skill-icon"><img src="img/postman.png"><span>Postman</span></div>
-            <div class="skill-icon"><img src="img/docker.png"><span>Docker</span></div>
-          
-            <div class="skill-icon"><img src="img/api.png"><span>REST APIs</span></div>
-            <div class="skill-icon"><img src="img/microservices.png"><span>Microservices</span></div>
-            <div class="skill-icon"><img src="img/auth.png"><span>Authentication</span></div>
-            <div class="skill-icon"><img src="img/security.png"><span>Security</span></div>
-          </div>          
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <div class="contact-content">
-          <div class="section-label">Get In Touch</div>
-          <h2>Let's Build Something Together</h2>
-          <p>
-            I'm always open to discussing new projects, creative ideas, or opportunities 
-            to be part of your vision. Feel free to reach out!
-          </p>
-
-          <!-- Contact Form -->
-          <form action="https://formspree.io/f/mkgydrby" method="POST" class="contact-form">
-            
-            <div class="form-row">
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-            </div>
-
-            <div class="form-row">
-              <input type="tel" name="phone" placeholder="Phone Number" required>
-            </div>
-
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-
-            <button type="submit" class="btn-primary">Send Message</button>
-          </form>
-
-          <!-- Social Media Links -->
-          <div class="social-links">
-            <a href="https://github.com/y00gi" target="_blank"><img src="img/github.png"></a>
-            <a href="https://www.linkedin.com/in/yogendra-rajput-3b7271221/" target="_blank"><img src="img/linkedin.png"></a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
+    <section id="skills" style="margin-top: 10rem;">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 yogendra.cloud Built with passion and code.</p>
-                <div class="footer-links">
-                    <a href="#services">Services</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+            <div class="section-header reveal">
+                <h2 class="section-title">Tech Stack</h2>
+                <p class="section-desc">Technologies I use to build scalable solutions.</p>
+            </div>
+    
+            <div class="skills-wrapper reveal">
+                <div class="skill-tag">
+                    <img src="img/csharp.png" alt="C#">
+                    <span>C#</span>
+                </div>
+                <div class="skill-tag">
+                    <img src="img/python.png" alt="Python">
+                    <span>Python</span>
+                </div>
+                <div class="skill-tag">
+                    <img src="img/cpp.png" alt="C++">
+                    <span>C++</span>
+                </div>
+                <div class="skill-tag">
+                    <img src="img/js.png" alt="C++">
+                    <span>JS</span>
+                </div>
+                <div class="skill-tag">
+                    <img src="img/sql.png" alt="SQL">
+                    <span>SQL</span>
+                </div>
+    
+                <div class="skill-tag">
+                    <img src="img/dotnet.png" alt=".NET">
+                    <span>ASP.NET Core</span>
+                </div>
+                <div class="skill-tag">
+                    <img src="img/django.png" alt="Django">
+                    <span>Django</span>
+                </div>
+    
+                <div class="skill-tag">
+                    <img src="img/sqlserver.png" alt="SQL Server">
+                    <span>SQL Server</span>
+                </div>
+                <div class="skill-tag">
+                    <img src="img/docker.png" alt="Docker">
+                    <span>Docker</span>
+                </div>
+                <div class="skill-tag">
+                    <img src="img/git.png" alt="Git">
+                    <span>Git</span>
+                </div>
+                <div class="skill-tag">
+                    <img src="img/postman.png" alt="Postman">
+                    <span>Postman</span>
+                </div>
+    
+                <div class="skill-tag">
+                    <img src="img/api.png" alt="API">
+                    <span>REST APIs</span>
+                </div>
+                <div class="skill-tag">
+                    <img src="img/microservices.png" alt="Microservices">
+                    <span>Microservices</span>
+                </div>
+                <div class="skill-tag">
+                    <img src="img/auth.png" alt="Auth">
+                    <span>Authentication</span>
+                </div>
+                <div class="skill-tag">
+                    <img src="img/security.png" alt="Security">
+                    <span>Security</span>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+
+<!-- Contact Section -->
+<section id="contact" style="margin-top: 10rem;">
+    <div class="container">
+      <div class="contact-content">
+        <h2>Ready to start a project?</h2>
+        <p>Let's build something amazing together.</p>
+
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/mkgydrby" method="POST" class="contact-form">
+          
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+
+          <div class="form-row">
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+          </div>
+
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+          <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+          <a href="https://github.com/y00gi" target="_blank"><img src="img/github.png"></a>
+          <a href="https://www.linkedin.com/in/yogendra-rajput-3b7271221/" target="_blank"><img src="img/linkedin.png"></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="margin-top: 5rem;">
+      <div class="container">
+          <div class="footer-content">
+              <p>&copy; 2025 yogendra.cloud Built with Passion and Code.</p>
+              <div class="footer-links">
+                  <a href="#services">Services</a>
+                  <a href="#projects">Projects</a>
+                  <a href="#contact">Contact</a>
+              </div>
+          </div>
+      </div>
+  </footer>
 
     <script src="js/script.js"></script>
 </body>
